@@ -7,6 +7,7 @@ categories:
   - Blog
 tags:
   - cron
+  - python
 ---
 # **Prologue**
 
