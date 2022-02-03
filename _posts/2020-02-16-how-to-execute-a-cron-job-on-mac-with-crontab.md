@@ -1,8 +1,9 @@
 ---
 title: "How to Execute a Cron Job on Mac With Crontab"
-excerpt: "Automate random stuff with Python and Crontab on your Macbook"
+excerpt: "Learn the basics of executing a Python cron job on Mac"
 header: 
   image: "/assets/images/hand-watch-macbook.JPG"
+  teaser: "/assets/images/hand-watch-macbook.JPG"
 categories:
   - Blog
 tags:
