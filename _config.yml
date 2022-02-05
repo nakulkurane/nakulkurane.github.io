@@ -22,6 +22,8 @@ github_username: username
 minimal_mistakes_skin: dirt
 search: true
 
+url: "https://nakulkurane.github.io"
+
 # Build settings
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
