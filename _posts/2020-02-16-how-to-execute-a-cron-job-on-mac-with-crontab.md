@@ -82,4 +82,9 @@ Hope this helped!
 # References
 * <a href="https://www.adminschoice.com/crontab-quick-reference" target="_blank">Cron Syntax</a>
 * <a href="https://linuxize.com/post/what-does-chmod-777-mean/" target="_blank">chmod 777</a>
+* <a href="https://realpython.com/installing-python/#step-2-install-homebrew-part-2" target="_blank">Real Python Homebrew Guide</a>
+* <a href="https://brew.sh/" target="_blank">Homebrew</a>
+
+---
+
 
