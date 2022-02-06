@@ -87,4 +87,6 @@ Hope this helped!
 
 ---
 
+*This post can also be found on <a href="https://betterprogramming.pub/how-to-execute-a-cron-job-on-mac-with-crontab-b2decf2968eb" target="_blank">Medium</a>. Gimme some claps!*
+
 
