@@ -78,3 +78,8 @@ Anyway, that should be enough to get you writing and testing your scripts, so go
 Feel free to browse the web to learn more about cron jobs and crontab. I decided to write this for those who have a fundamental understanding of programming and wanted to write a cron job as soon as possible.
 
 Hope this helped!
+
+# References
+* <a href="https://www.adminschoice.com/crontab-quick-reference" target="_blank">Cron Syntax</a>
+* <a href="https://linuxize.com/post/what-does-chmod-777-mean/" target="_blank">chmod 777</a>
+
