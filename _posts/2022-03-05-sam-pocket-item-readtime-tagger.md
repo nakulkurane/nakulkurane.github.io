@@ -264,7 +264,7 @@ Now that we've added the cron schedule, we can build and deploy again (you shoul
 
 # References:
 
-- [Install and configuire AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html)
+- [Install and configure AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html)
 - [What is AWS SAM?](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/what-is-sam.html)
 - [Install and configure AWS SAM CLI](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-install.html)
 - [Install Docker](https://docs.docker.com/get-docker/)
