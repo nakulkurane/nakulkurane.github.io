@@ -90,9 +90,28 @@ Ultimately, my modified _Get Secret_ function turned into this:
 
 which can also be found in the actual [app](https://github.com/nakulkurane/sam-pocket-item-readtime-tagger/blob/main/app.py).
 
-As opposed to hard-coding the _Secret Name_ in the function, I made it a parameter if more than one Secret needs to be retrieved, which was the case for me.
+As opposed to hard-coding the _Secret Name_ in the function, I made it a parameter in case more than one Secret needs to be retrieved, like for my app.
 
-Whether you use the sample code provided by AWS or modify it like I did, you should be able to test the function locally (either running a script locally or locally invoking a deployed function). That's a wrap!
+Whether you use the sample code provided by AWS or modify it like I did, you should be able to test the function locally (of course, you need to import the boto3 module).
+
+If your app is Serverless (deployed to AWS Lambda), then there is another change you will need to make for the function to work.
+
+In your *template.yaml*, add the following:
+
+```yaml
+Resources:
+  Function:
+    Type: 'AWS::Serverless::Function'
+    Properties:
+      Policies:
+        - SecretsManagerReadWrite
+```
+
+This will attach the listed IAM Policy to the IAM Role created via `sam deploy` so the Lambda function will be able to access the Secrets.
+
+My *template.yaml* and the rest of the code can be viewed at [this repo](https://github.com/nakulkurane/sam-pocket-item-readtime-tagger)
+
+**That's a wrap!**
 
 # References:
 
@@ -100,4 +119,5 @@ Whether you use the sample code provided by AWS or modify it like I did, you sho
 - [Pocket Developer API](https://getpocket.com/developer/)
 - [Configure environment variables for AWS Lambda function](https://docs.aws.amazon.com/lambda/latest/dg/configuration-envvars.html)
 - [What is AWS Secrets Manager?](https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html)
+- [Attach IAM Policy to Role in SAM Template](https://aws.amazon.com/premiumsupport/knowledge-center/lambda-sam-template-permissions/)
 
